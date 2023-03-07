@@ -21,7 +21,7 @@
   $ flask --app flasktask2 run
   ```
   
-  - Check if it's working:
+  ### Check if it's working:
   - Put that in your net browser:
   ```
   $ http://127.0.0.1:5000/
