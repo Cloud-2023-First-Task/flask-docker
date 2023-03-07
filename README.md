@@ -8,8 +8,10 @@
   $ python3 -m venv venv
 
   # Second we need to activate it
+  ```
   $ . venv/bin/activate
   $ pip install -r requirements.txt
+  ```
 
   # App run:
   $ flask --app flasktask2 run
