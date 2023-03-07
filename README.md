@@ -3,9 +3,12 @@
 
 - Instalation of Flask and running a simple app:
 
-  ```
+  
   # First we need to make virtual environment
+  
+  ```
   $ python3 -m venv venv
+  ```
 
   # Second we need to activate it
   ```
@@ -13,15 +16,22 @@
   $ pip install -r requirements.txt
   ```
 
-  # App run:
+  # App run: 
+  ```
   $ flask --app flasktask2 run
+  ```
   
   # Check if it's working:
   # Put that in your net browser:
+  ```
   $ http://127.0.0.1:5000/
+  ```
   # Second endpoint:
+  ```
   $ http://127.0.0.1:5000/hello
+  ```
   # PyLinter check:
+  ```
   $ pylint flasktask2
   ```
 - Dockerize this app (must have docker installed):
