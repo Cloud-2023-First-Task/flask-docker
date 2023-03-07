@@ -1,50 +1,59 @@
 # Simple Flask App with docker
 
 
-- Instalation of Flask and running a simple app:
+## Instalation of Flask and running a simple app:
 
   
-  # First we need to make virtual environment
+  - First we need to make virtual environment
   
   ```
   $ python3 -m venv venv
   ```
 
-  # Second we need to activate it
+  - Second we need to activate it
   ```
   $ . venv/bin/activate
   $ pip install -r requirements.txt
   ```
 
-  # App run: 
+  - App run: 
   ```
   $ flask --app flasktask2 run
   ```
   
-  # Check if it's working:
-  # Put that in your net browser:
+  - Check if it's working:
+  - Put that in your net browser:
   ```
   $ http://127.0.0.1:5000/
   ```
-  # Second endpoint:
+  - Second endpoint:
   ```
   $ http://127.0.0.1:5000/hello
   ```
-  # PyLinter check:
+  - PyLinter check:
   ```
   $ pylint flasktask2
   ```
-- Dockerize this app (must have docker installed):
+# Dockerize this app (must have docker installed):
+  
+  - Make Docker image:
   ```
-  # Make Docker image:
   $ docker build --tag python-docker-flask .
-  # Run container:
+  ```
+  - Run container:
+  ```
   $ docker run -d -p 5000:5000 python-docker-flask
-  # Check containers list:
+  ```
+  - Check containers list:
+  ```
   $ docker ps
-  # To check if its working You need to go to browser and type:
+  ```
+  - To check if its working You need to go to browser and type:
+  ```
   $ http://127.0.0.1:5000/
-  # Second endpoint:
+  ```
+  - Second endpoint:
+  ```
   $ http://127.0.0.1:5000/hello
   ```
   
